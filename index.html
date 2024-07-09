@@ -121,7 +121,7 @@
       <section class="projects">
         <div class="projects__header">
           <h2 class="projects__heading">Projects</h2>
-          <a class="button-underline" href="#contact">CONTACT ME</a>
+          <a class="button-underline" href="https://github.com/Lemon1903?tab=repositories" target="_blank">VIEW ALL</a>
         </div>
         <ul class="projects__list">
           <li class="projects__item">
@@ -301,18 +301,34 @@
             </p>
           </div>
           <!-- Contact Form -->
-          <form class="contact__form" action="/" method="post">
-            <input class="contact__input" type="text" name="name" id="name" aria-label="Name" placeholder="NAME" />
-            <input class="contact__input" type="email" name="email" id="email" aria-label="Email" placeholder="EMAIL" />
-            <textarea
-              class="contact__input"
-              name="message"
-              id="message"
-              cols="30"
-              rows="4"
-              aria-label="Message"
-              placeholder="MESSAGE"
-            ></textarea>
+          <form class="contact__form" method="post">
+            <div class="contact__input-container">
+              <input class="contact__input" type="text" name="name" id="name" aria-label="Name" placeholder="NAME" />
+              <p class="contact__error">This field is required</p>
+            </div>
+            <div class="contact__input-container">
+              <input
+                class="contact__input"
+                type="email"
+                name="email"
+                id="email"
+                aria-label="Email"
+                placeholder="EMAIL"
+              />
+              <p class="contact__error">This field is required</p>
+            </div>
+            <div class="contact__input-container">
+              <textarea
+                class="contact__input"
+                name="message"
+                id="message"
+                cols="30"
+                rows="4"
+                aria-label="Message"
+                placeholder="MESSAGE"
+              ></textarea>
+              <p class="contact__error">This field is required</p>
+            </div>
             <button class="contact__btn-submit button-underline" type="submit">SEND MESSAGE</button>
           </form>
         </section>
@@ -396,5 +412,14 @@
         </nav>
       </div>
     </footer>
+    <button class="scroll-to-top" title="Scroll to top">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+        <path
+          d="M233.4 105.4c12.5-12.5 32.8-12.5 45.3 0l192 192c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L256 173.3 86.6 342.6c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3l192-192z"
+        />
+      </svg>
+    </button>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>
