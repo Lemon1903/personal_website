@@ -380,10 +380,9 @@ footer {
   outline: none;
   color: var(--neutral-white);
   transition: border-bottom-color 0.1s ease-in-out;
-
-  &.error {
-    border-bottom-color: var(--descructive);
-  }
+}
+.contact__input.error {
+  border-bottom-color: var(--descructive);
 }
 
 .contact__input:hover,
@@ -399,10 +398,9 @@ footer {
   right: 0;
   font-size: var(--font-sm);
   color: var(--descructive);
-
-  &.show {
-    display: block;
-  }
+}
+.contact__error.show {
+  display: block;
 }
 
 .contact__btn-submit {
